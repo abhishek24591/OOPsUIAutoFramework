@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="3">
-  <test thread-count="2" parallel="methods" name="My hub spot test on chrome(failed)" verbose="3">
-    <parameter name="browser" value="Chrome"/>
+<suite thread-count="3" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="3">
+  <test thread-count="3" parallel="methods" name="My hub spot test on chrome(failed)" verbose="3">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.MyTests.LoginTest">
         <methods>
+          <include name="verifyLoginPageHeader"/>
           <include name="tearDown"/>
           <include name="doLoginTest"/>
+          <include name="verifyLoginPageTitleTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.MyTests.LoginTest -->

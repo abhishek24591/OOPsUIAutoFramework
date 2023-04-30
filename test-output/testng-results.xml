@@ -1,66 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-29T12:21:26Z" name="Suite" finished-at="2023-04-29T12:21:51Z" duration-ms="25314">
+  <suite started-at="2023-04-30T15:05:01Z" name="Suite" finished-at="2023-04-30T15:10:01Z" duration-ms="300831">
     <groups>
     </groups>
-    <test started-at="2023-04-29T12:21:26Z" name="My hub spot test on chrome" finished-at="2023-04-29T12:21:51Z" duration-ms="25314">
+    <test started-at="2023-04-30T15:05:01Z" name="My hub spot test on chrome" finished-at="2023-04-30T15:10:01Z" duration-ms="300831">
       <class name="com.MyTests.LoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.MyTests.LoginTest@345f69f3]" started-at="2023-04-29T12:21:26Z" name="setUp" finished-at="2023-04-29T12:21:34Z" duration-ms="8137" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.MyTests.LoginTest@3f57bcad]" started-at="2023-04-30T15:05:01Z" name="setUp" finished-at="2023-04-30T15:10:01Z" duration-ms="300786" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+at com.MyTests.BaseTest.setUp(BaseTest.java:70)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginPageTitleTest()[pri:1, instance:com.MyTests.LoginTest@345f69f3]" started-at="2023-04-29T12:21:34Z" name="verifyLoginPageTitleTest" finished-at="2023-04-29T12:21:34Z" duration-ms="15" status="PASS">
+        <test-method signature="verifyLoginPageTitleTest()[pri:1, instance:com.MyTests.LoginTest@3f57bcad]" started-at="2023-04-30T15:10:01Z" name="verifyLoginPageTitleTest" finished-at="2023-04-30T15:10:01Z" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+at com.MyTests.BaseTest.setUp(BaseTest.java:70)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.MyTests.LoginTest@345f69f3]" started-at="2023-04-29T12:21:34Z" name="tearDown" finished-at="2023-04-29T12:21:34Z" duration-ms="348" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.MyTests.LoginTest@3f57bcad]" started-at="2023-04-30T15:10:01Z" name="tearDown" finished-at="2023-04-30T15:10:01Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.MyTests.LoginTest@345f69f3]" started-at="2023-04-29T12:21:34Z" name="setUp" finished-at="2023-04-29T12:21:42Z" duration-ms="7542" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.MyTests.LoginTest@3f57bcad]" started-at="2023-04-30T15:10:01Z" name="setUp" finished-at="2023-04-30T15:10:01Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginPageHeader()[pri:2, instance:com.MyTests.LoginTest@345f69f3]" started-at="2023-04-29T12:21:42Z" name="verifyLoginPageHeader" finished-at="2023-04-29T12:21:42Z" duration-ms="41" status="PASS">
+        <test-method signature="verifyLoginPageHeader()[pri:2, instance:com.MyTests.LoginTest@3f57bcad]" started-at="2023-04-30T15:10:01Z" name="verifyLoginPageHeader" finished-at="2023-04-30T15:10:01Z" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+at com.MyTests.BaseTest.setUp(BaseTest.java:70)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageHeader -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.MyTests.LoginTest@345f69f3]" started-at="2023-04-29T12:21:42Z" name="tearDown" finished-at="2023-04-29T12:21:42Z" duration-ms="332" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.MyTests.LoginTest@3f57bcad]" started-at="2023-04-30T15:10:01Z" name="tearDown" finished-at="2023-04-30T15:10:01Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.MyTests.LoginTest@345f69f3]" started-at="2023-04-29T12:21:42Z" name="setUp" finished-at="2023-04-29T12:21:50Z" duration-ms="7739" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.MyTests.LoginTest@3f57bcad]" started-at="2023-04-30T15:10:01Z" name="setUp" finished-at="2023-04-30T15:10:01Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="doLoginTest()[pri:3, instance:com.MyTests.LoginTest@345f69f3]" started-at="2023-04-29T12:21:50Z" name="doLoginTest" finished-at="2023-04-29T12:21:51Z" duration-ms="829" status="PASS">
+        <test-method signature="doLoginTest()[pri:3, instance:com.MyTests.LoginTest@3f57bcad]" started-at="2023-04-30T15:10:01Z" name="doLoginTest" finished-at="2023-04-30T15:10:01Z" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+at com.MyTests.BaseTest.setUp(BaseTest.java:70)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.MyTests.LoginTest@345f69f3]" started-at="2023-04-29T12:21:51Z" name="tearDown" finished-at="2023-04-29T12:21:51Z" duration-ms="309" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.MyTests.LoginTest@3f57bcad]" started-at="2023-04-30T15:10:01Z" name="tearDown" finished-at="2023-04-30T15:10:01Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
